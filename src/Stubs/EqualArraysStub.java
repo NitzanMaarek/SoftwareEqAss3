@@ -6,7 +6,7 @@ public class EqualArraysStub {
 
     public void EqualArraysStub(){}
 
-    public boolean equalArraysPhase1(int[] arr1, int[] arr2) {
+    public boolean equalArraysTopDownPhase1(int[] arr1, int[] arr2) {
         if (arr1==null && arr2 == null) return true;
         return Arrays.equals(arr1, arr2);
     }

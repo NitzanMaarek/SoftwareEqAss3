@@ -8,7 +8,7 @@ public class CopyArrStub {
 
     }
 
-    public int[] copyArrTopDown2(int[] arr){
+    public int[] copyArrTopDownPhase2(int[] arr){
         int[] arr1 = {5,4,7,2,1};
         int[] arr2 = {2, 65, 87, 121, 6, 21};
 

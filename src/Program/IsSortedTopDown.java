@@ -15,6 +15,6 @@ public class IsSortedTopDown {
 
     public boolean isSortedPhase1(int[] arr) {
         int[] sorted = sortArrayStub.sortArrayTopDownPhase1(arr);
-        return equalArraysStub.equalArraysPhase1(arr, sorted);
+        return equalArraysStub.equalArraysTopDownPhase1(arr, sorted);
     }
 }

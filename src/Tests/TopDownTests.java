@@ -44,4 +44,12 @@ public class TopDownTests {
         assertFalse(isSortedTopDown.isSortedPhase1(arr1));
         assertTrue(isSortedTopDown.isSortedPhase1(arr2));
     }
+
+    @Test
+    public void sumMinMaxPhase1Test(){
+        SumMinMaxTopDown sumMinMaxTopDown = new SumMinMaxTopDown();
+        int[] arr1 = {1, 3, 5};
+        int expected = 6;
+        assertEquals(sumMinMaxTopDown.sumMinMaxPhase1(arr1), 6);
+    }
 }
