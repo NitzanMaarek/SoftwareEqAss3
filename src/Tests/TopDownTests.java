@@ -1,6 +1,5 @@
 
 import Program.*;
-import org.hamcrest.core.Is;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,10 +8,10 @@ public class TopDownTests {
 
     /*
     Top-Down sequence of test execution by phases:
-    1. swapMinMax, merge, isSorted, printSorted, sumMinMax.
-    2. 1 + minValueIndex, minValue, maxValue, sortArray, printArr, equalsArrays.
-    3. 2 + copyArr, maxValueIndex.
-    4. size.
+    Phase1. swapMinMax, merge, isSorted, printSorted, sumMinMax.
+    Phase2. 1 + minValueIndex, minValue, maxValue, sortArray, printArr, equalsArrays.
+    Phase3. 2 + copyArr, maxValueIndex.
+    Phase4. size.
 
      */
 
@@ -21,18 +20,18 @@ public class TopDownTests {
 
     @Test
     public void mergePhase1Test(){
-        MergeTopBottom mergeTopBottom = new MergeTopBottom();
+        MergeTopDown mergeTopDown = new MergeTopDown();
         int[] arr1 = {5, 3, 1};
         int[] arr2 = {6, 4, 2};
         int[] expected1 = {1, 2, 3, 4, 5, 6};
-        int[] result = mergeTopBottom.mergePhase1(arr1, arr2);
+        int[] result = mergeTopDown.mergePhase1(arr1, arr2);
         assertArrayEquals(expected1, result);
 
         int[] expected2 = {1, 3, 5};
-        result = mergeTopBottom.mergePhase1(arr1, new int[]{});
+        result = mergeTopDown.mergePhase1(arr1, new int[]{});
         assertArrayEquals(expected2, result);
 
-        result = mergeTopBottom.mergePhase1(new int[]{}, arr1);
+        result = mergeTopDown.mergePhase1(new int[]{}, arr1);
         assertArrayEquals(expected2, result);
     }
 

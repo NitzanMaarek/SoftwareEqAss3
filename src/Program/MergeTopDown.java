@@ -2,12 +2,12 @@ package Program;
 
 import Stubs.SortArrayStub;
 
-public class MergeTopBottom{
+public class MergeTopDown {
 
     private SortArrayStub sortArrayStub;
     private SortArrayTopDown sortArrayTopDown;
 
-    public MergeTopBottom(){
+    public MergeTopDown(){
         sortArrayStub = new SortArrayStub();
         sortArrayTopDown = new SortArrayTopDown();
     }
