@@ -2,9 +2,15 @@ package Stubs;
 
 import java.util.Arrays;
 
-public class SortArrayStub extends Program {
+public class SortArrayEqualArraysStub extends Program {
 
-    public SortArrayStub(){}
+    public SortArrayEqualArraysStub(){}
+
+    @Override
+    public boolean equalArrays(int[] arr1, int[] arr2) {
+        if (arr1==null && arr2 == null) return true;
+        return Arrays.equals(arr1, arr2);
+    }
 
     @Override
     // Returns an ascending sorted copy of array "arr"
@@ -23,7 +29,6 @@ public class SortArrayStub extends Program {
         System.arraycopy(arr, 0, ans, 0, arr.length);
         return ans;
     }
-
 
 
 
