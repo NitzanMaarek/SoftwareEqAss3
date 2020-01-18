@@ -49,6 +49,7 @@ public class Program {
 	
 	// Returns sum of minimum and maximum values in the array
 	public int sumMinMax(int[] arr) {
+
 		return minValue(arr) + maxValue(arr);
 	}
 	
