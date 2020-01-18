@@ -30,6 +30,14 @@ public class PrintSortedTopDown {
         assertEquals("5 3 1 \r\n1 3 5 \r\n1 3 5 \r\n", outContent.toString());
     }
 
+    @Test
+    public void printSortedTestNullArray() {
+        SortArrayPrintArrStub sortArrayPrintArrStub = new SortArrayPrintArrStub();
+        int[] arr = null;
+        sortArrayPrintArrStub.printSorted(arr);
+        assertEquals("No Array \r\n", outContent.toString());
+    }
+
     @After
     public void restoreStreams() {
         System.setOut(originalOut);
