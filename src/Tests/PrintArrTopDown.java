@@ -29,7 +29,9 @@ public class PrintArrTopDown {
         int[] arr = {5, 3, 1};
         program.printArr(arr);
         assertEquals("5 3 1 \r\n", outContent.toString());
+
     }
+
 
     @After
     public void restoreStreams() {

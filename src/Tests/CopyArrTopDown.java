@@ -11,4 +11,20 @@ public class CopyArrTopDown {
         int[] result = programStub.copyArr(arr);
         assertArrayEquals(arr, result);
     }
+
+    @Test
+    public void copyEmptyArr(){
+        SizeStub programStub = new SizeStub();
+        int[] arr = {};
+        int[] result = programStub.copyArr(arr);
+        assertArrayEquals(arr, result);
+    }
+
+    @Test
+    public void copyNullArr(){
+        SizeStub programStub = new SizeStub();
+        int[] arr = null;
+        int[] result = programStub.copyArr(arr);
+        assertNull(result);
+    }
 }

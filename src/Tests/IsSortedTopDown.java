@@ -13,4 +13,11 @@ public class IsSortedTopDown {
         assertFalse(programStub.isSorted(arr1));
     }
 
+    @Test
+    public void isSorted2Test(){
+        SortArrayEqualArraysStub programStub =  new SortArrayEqualArraysStub();
+        int[] arr1 = {-4, 3, 10};
+        assertTrue(programStub.isSorted(arr1));
+    }
+
 }
