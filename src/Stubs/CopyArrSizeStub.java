@@ -2,9 +2,9 @@ package Stubs;
 
 import java.util.Arrays;
 
-public class CopyArrStub extends Program{
+public class CopyArrSizeStub extends Program{
 
-    public CopyArrStub(){}
+    public CopyArrSizeStub(){}
 
     @Override
     public int[] copyArr(int[] arr){
@@ -14,6 +14,11 @@ public class CopyArrStub extends Program{
         int[] ans = new int[arr.length];
         System.arraycopy(arr, 0, ans, 0, arr.length);
         return ans;
+    }
+
+    @Override
+    public int size(int[] arr){
+        return arr.length;
     }
 
 }
