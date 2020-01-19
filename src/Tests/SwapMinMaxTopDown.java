@@ -12,4 +12,14 @@ public class SwapMinMaxTopDown {
         int[] expected = {5, 3, 1};
         assertArrayEquals(expected, minValueIndexMaxValueCopyArrStub.swapMinMax(arr));
     }
+
+
+    @Test
+    public void testEmptyArray() {
+        MinValueIndexMaxValueCopyArrStub minValueIndexMaxValueCopyArrStub = new MinValueIndexMaxValueCopyArrStub();
+        int[] arr1 = {};
+        int[] actualArray = minValueIndexMaxValueCopyArrStub.swapMinMax(arr1);
+        int[] expectedMerge = {};
+        assertArrayEquals(expectedMerge, actualArray);
+    }
 }

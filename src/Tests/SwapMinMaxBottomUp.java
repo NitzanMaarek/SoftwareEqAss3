@@ -14,4 +14,13 @@ public class SwapMinMaxBottomUp {
         assertArrayEquals(expected, program.swapMinMax(arr));
     }
 
+    @Test
+    public void testEmptyArray() {
+        Program program = new Program();
+        int[] arr1 = {};
+        int[] actualArray = program.swapMinMax(arr1);
+        int[] expectedMerge = {};
+        assertArrayEquals(expectedMerge, actualArray);
+    }
+
 }
