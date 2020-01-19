@@ -23,7 +23,7 @@ public class SortArrayBottomUp {
         Program program = new Program();
         int[] arr1 = null;
         int[] expected = null;
-        System.out.println(Arrays.toString(program.sortArray(arr1)));
+
         assertArrayEquals(expected, program.sortArray(arr1));
     }
 
