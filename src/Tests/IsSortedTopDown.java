@@ -20,4 +20,11 @@ public class IsSortedTopDown {
         assertTrue(programStub.isSorted(arr1));
     }
 
+    @Test
+    public void isSortedNullArrayTest(){
+        SortArrayEqualArraysStub programStub =  new SortArrayEqualArraysStub();
+        int[] arr =  null;
+        assertTrue(programStub.isSorted(arr));
+    }
+
 }
