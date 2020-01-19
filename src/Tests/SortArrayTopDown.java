@@ -12,4 +12,13 @@ public class SortArrayTopDown {
         int[] expected = {1, 3, 5};
         assertArrayEquals(expected, copyArrSizeStub.sortArray(arr1));
     }
+
+
+    @Test
+    public void sortArrayTestNullArray(){
+        CopyArrSizeStub copyArrSizeStub = new CopyArrSizeStub();
+        int[] arr1 = null;
+        int[] expected = null;
+        assertArrayEquals(expected, copyArrSizeStub.sortArray(arr1));
+    }
 }

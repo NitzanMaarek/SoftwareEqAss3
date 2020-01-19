@@ -22,6 +22,8 @@ public class PrintSortedTopDown {
         System.setErr(new PrintStream(errContent));
     }
 
+
+
     @Test
     public void printSortedTest() {
         SortArrayPrintArrStub sortArrayPrintArrStub = new SortArrayPrintArrStub();
@@ -36,6 +38,14 @@ public class PrintSortedTopDown {
         int[] arr = null;
         sortArrayPrintArrStub.printSorted(arr);
         assertEquals("No Array \r\n", outContent.toString());
+    }
+
+    @Test
+    public void printSortedTestEmtyArray() {
+        SortArrayPrintArrStub sortArrayPrintArrStub = new SortArrayPrintArrStub();
+        int[] arr = {};
+        sortArrayPrintArrStub.printSorted(arr);
+        assertEquals("\r\n\r\n\r\n", outContent.toString());
     }
 
     @After
