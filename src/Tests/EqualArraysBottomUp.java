@@ -11,8 +11,8 @@ public class EqualArraysBottomUp {
     public void equalArraysTest(){
         Program programStub = new Program();
         int[] arr1 = {1, 3, 5};
-        int[] arr2 = {2, 4, 6};
-        assertFalse(programStub.equalArrays(arr1, arr2));
+        int[] arr2 = {1, 3, 5};
+        assertTrue(programStub.equalArrays(arr1, arr2));
     }
 
     @Test

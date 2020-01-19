@@ -1,6 +1,8 @@
 import Stubs.Program;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNull;
 
@@ -11,6 +13,7 @@ public class CopyArrBottomUp {
         Program programStub = new Program();
         int[] arr = {1, 3, 5};
         int[] result = programStub.copyArr(arr);
+
         assertArrayEquals(arr, result);
     }
 
@@ -19,6 +22,7 @@ public class CopyArrBottomUp {
         Program programStub = new Program();
         int[] arr = {};
         int[] result = programStub.copyArr(arr);
+
         assertArrayEquals(arr, result);
     }
 
